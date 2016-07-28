@@ -1,0 +1,55 @@
+<html>
+<head>
+ 
+<link rel="stylesheet" type="text/css" href="home.css"></link>
+
+</head>
+
+<variable type="FaceBooklet" name="book" value="new FaceBooklet()" />
+
+   <variable type="String" name="userName" value="null" />
+   <variable type="String" name="email" value="null" />
+   <variable type="String" name="status" value="null" />
+   <variable type="String" name="pictureUrl" value="null" />
+ <zscript>
+    if (book.getCurrentUser() != null)
+    {
+        WebUtilities.showWebPage("home.zhtml");
+    }
+</zscript>   
+   
+
+<body>
+
+
+	
+
+	<div id = "container_login">
+
+		<div id = "body_login">
+			
+			UserName: <div> <textbox value="" id="name"/></div>
+			Password: <div><textbox value="" type="password" id="pass"  /></div>
+			<br/><button label="Login" class="button">
+										  <attribute name="onClick">
+											 book.login(name.getValue(), pass.getValue());
+											 
+										  </attribute>
+									   </button>
+									   
+									   OR
+									   
+			<button label="Create New User" class="button">
+					 <attribute name="onClick">
+							book.createNewUser(name.getValue(), pass.getValue());
+											 
+					</attribute>
+			 </button>
+			<div id="forgotpass"><a href="password.zhtml">Forgot Password?</a></div>
+		</div>
+		<div><text value="@{book.getMsg()}"/></div>
+	</div>
+
+  	
+</body>
+</html>

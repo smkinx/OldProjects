@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=newAuthor\ newMessage
+comment0.target=WallPosting(UserProfile,\ java.lang.String)
+comment0.text=\r\n\ Creates\ a\ new\ WallPosting\ object.\r\n\ @param\ newAuthor\ the\ author\ of\ the\ post\r\n\ @param\ newMessage\ the\ message\ on\ the\ post\r\n
+comment1.params=
+comment1.target=WallPosting()
+comment1.text=\r\n\ Creates\ a\ new\ WallPosting\ object.\r\n
+comment2.params=
+comment2.target=java.util.Date\ getDate()
+comment2.text=\r\n\ An\ accessor\ for\ the\ date\ of\ the\ post\r\n\ @return\ the\ date\r\n
+comment3.params=
+comment3.target=java.lang.String\ getMessage()
+comment3.text=\r\n\ An\ accessor\ for\ the\ message\ of\ the\ post\r\n\ @return\ the\ meassage\r\n
+comment4.params=
+comment4.target=UserProfile\ getAuthor()
+comment4.text=\r\n\ An\ accessor\ for\ the\ author\ of\ the\ post\r\n\ @return\ the\ author\r\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\r\n\ An\ accessor\ for\ the\ post\ in\ string\ format\r\n\ @return\ the\ post\r\n
+numComments=6

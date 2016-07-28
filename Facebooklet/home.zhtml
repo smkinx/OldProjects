@@ -1,0 +1,174 @@
+<html>
+<head>
+ 
+<link rel="stylesheet" type="text/css" href="home.css"></link>
+
+</head>
+
+<variable type="FaceBooklet" name="book" value="new FaceBooklet()" />
+
+   <variable type="String" name="userName" value="null" />
+   <variable type="String" name="Friends" value="null" />
+   <variable type="WallPosting" name="posts" value="null" />
+   <variable type="String" name="pictureUrl" value="null" />
+   <variable type="String" name="homes" value="null" />
+
+
+<zscript>
+    if (book.getCurrentUser() == null)
+    {
+        WebUtilities.showWebPage("index.zhtml");
+    }
+</zscript>
+
+
+
+<body>
+
+
+
+		<div id ="headder">
+			<div id ="headder_top">
+				<div id = "headder_logo"></div>
+				<div id ="headder_search">
+						<textbox value="" id="name" class="textbox" height="19px"  width="200px"/>
+							<button label="Lookup" class="button">
+									<attribute name="onClick">
+											 userName = name.getValue();		 
+										   
+												book.loadProfile(userName);
+								
+											 
+									</attribute>
+							</button>
+				</div>
+				
+			
+			
+				<div id ="headder_nav">
+				<a href="group.zhtml">View Groups</a>
+				</div>
+				<div id = "headder_user">
+								<div id = "headder_user_pic" style="back" >
+									<img src="@{book.getCurrentUser().getPictureUrl()}" width="45px" height="45px"/>
+								</div>
+								<div id = "headder_user_name">
+									<text value="@{book.getCurrentUser().getName()}"/>
+									
+								</div>
+					<div class = "headder_user_text">
+					<a href="home.zhtml">View Profile</a> | <a href="edit.zhtml">Edit Profile</a>
+					</div>
+				</div>
+				<div id="logout">
+					<button label="logout" class="button">
+									<attribute name="onClick">
+											 book.logout();							
+											 WebUtilities.showWebPage("index.zhtml");
+									</attribute>
+							</button>
+
+				</div>
+			</div>
+		</div>
+	
+	
+	
+<div id = "container">
+		<div id ="body">
+		
+			<div id ="body_left">
+				<div id ="body_left_left">
+					<div id ="body_left_pic">
+						<img src="@{book.getProfile().getPictureUrl()}" width="178px" alt="Profile picture will be here"/> 
+					</div>
+					<div class ="body_left_left">
+					<p></p>
+<button label="Add as a Friend" visible="@{!(book.currentProfile())}" class="button" width="180px">
+        <attribute name= "onClick">		
+		book.getProfile().addFriend(book.getCurrentUser().getName());		
+		book.loadProfile(book.getCurrentUser().getName());
+		book.getProfile().addFriend(userName);
+		book.saveProfile();
+		book.loadProfile(userName);
+
+        </attribute>
+      </button>
+	  <p></p>
+	  <listbox model="@{book.getProfile().getFriends()}" selectedItem="@{homes}">
+	  <attribute name="onSelect">
+							userName = Friends;
+							book.loadProfile(homes);
+							</attribute>	
+						<listhead>
+							<listheader label="Friends"/>
+						</listhead>
+						 <listitem each="@{ahomes}">
+								
+							<listcell>
+					<img src="@{book.getUser(ahomes).getPictureThumbUrl()}" width="45px" height="45px"/>
+										<text value="@{ahomes}"/>
+								</listcell>
+							</listitem>
+					</listbox>
+					</div>
+				</div>
+				<div id ="body_left_right">
+					<div id ="body_right_name"><text value="@{book.getProfile().getName()}" /></div>
+					 <div id ="body_right_status"><text value="@{book.getProfile().getStatus()}" visible="True" /><br />
+					<textbox value="update status" visible="@{(book.currentProfile())}" id="status1" class="textbox" height="19px" />
+					<button label="Update Status" visible="@{(book.currentProfile())}" class="button">
+							<attribute name= "onClick">
+							book.loadProfile(book.getCurrentUser().getName());
+							book.setInfo(book.getProfile().getEmail(), status1.getValue(), book.getProfile().getPictureUrl(), book.getProfile().getPassword(), book.getProfile().getPictureThumbUrl());							
+							book.saveProfile();
+							book.loadProfile(userName);
+							
+							</attribute>
+						  </button>
+					
+			</div>
+					
+					<div class="body_info">	
+						<div class="body_info_set">
+							<div class="body_info_head">Email</div>
+							<div class="body_info_tail"><text value="@{book.getProfile().getEmail()}"/></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id ="body_right">
+				<div id ="body_right_wall">
+					<div id ="body_right_head">Wall Posts
+					<div>
+						  		<textbox value="" id="wall" width="290px" class="textbox" height="19px"/>
+									<button label="Post" width="58px" height="25px" class="button">
+								<attribute name= "onClick">
+									book.loadProfile(userName);
+									book.getProfile().postToWall(book.getCurrentUser(), wall.getValue());
+										book.saveProfile();
+							
+							
+										</attribute>
+										</button>
+					</div>
+					</div>
+						<text value="@{book.getProfile().getWallPostings()}"/>
+				</div>
+			</div>
+		 
+		</div>
+			
+						  
+
+
+
+						  
+									
+</div>  	
+
+
+  	
+</body>
+</html>

@@ -1,0 +1,83 @@
+<html>
+<head>
+ 
+<link rel="stylesheet" type="text/css" href="home.css"></link>
+
+</head>
+
+<variable type="FaceBooklet" name="book" value="new FaceBooklet()" />
+
+ <zscript>
+    if (book.getCurrentUser() == null)
+    {
+        WebUtilities.showWebPage("index.zhtml");
+    }
+</zscript>
+
+<body>
+
+	<div id ="headder">
+			<div id ="headder_top">
+				<div id = "headder_logo"></div>
+				<div id ="headder_search">
+						
+				</div>
+				
+			
+			
+				<div id ="headder_nav">
+				</div>
+				<div id = "headder_user">
+								<div id = "headder_user_pic" style="back" >
+									<img src="@{book.getCurrentUser().getPictureUrl()}" width="45px" height="45px"/>
+								</div>
+								<div id = "headder_user_name">
+									<text value="@{book.getCurrentUser().getName()}"/>
+								</div>
+					<div class = "headder_user_text">
+										<a href="home.zhtml">View Profile</a> | <a href="edit.zhtml">Edit Profile</a>
+
+					</div>
+				</div>
+				<div id="logout">
+					<button label="logout" class="button">
+									<attribute name="onClick">
+											 book.logout();							
+											 WebUtilities.showWebPage("index.zhtml");
+									</attribute>
+							</button>
+
+				</div>
+			</div>
+		</div>
+		
+	<text value="@{book.getMsg()}"/> 
+	
+	<div id = "container">
+		<div id = "body_edit">
+				
+			<div class ="heading">Edit Profile</div>
+				<p>Name: <text value="@{book.getCurrentUser().getName()}" id="name1"/></p>
+				<p>Email: <textbox value="@{book.getCurrentUser().getEmail()}" width="400px" id="email1"/></p>
+				<p>Status: <textbox value="@{book.getCurrentUser().getStatus()}" width="400px" id="status1"/></p>
+				<p>PictureUrl: <textbox value="@{book.getCurrentUser().getPictureUrl()}" width="400px" id="pic1"/></p>
+				<p>Thumb Picture URL: <textbox value="@{book.getCurrentUser().getPictureThumbUrl()}" width="400px" id="thumb1"/></p>
+				<p>Password: <textbox value="@{book.getCurrentUser().getPassword()}" width="400px" id="pass1"/></p>
+				<p>Question: <textbox value="@{book.getCurrentUser().getQuestion()}"/></p>
+				<p></p>
+		<button label="Save">
+	     <attribute name="onClick">
+			book.loadProfile(name1.getValue());
+			book.setInfo(email1.getValue(),status1.getValue(),pic1.getValue(),pass1.getValue(),thumb1.getValue());
+			book.saveProfile();	
+			WebUtilities.showWebPage("home.zhtml");
+					
+         </attribute>
+	   </button>
+				
+		</div>
+	</div>  	
+
+  	
+</body>
+</html>

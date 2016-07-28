@@ -1,0 +1,73 @@
+<html>
+<head>
+ 
+<link rel="stylesheet" type="text/css" href="home.css"></link>
+
+</head>
+
+<variable type="FaceBooklet" name="book" value="new FaceBooklet()" />
+
+
+
+<body>
+
+	<div id ="headder">
+			<div id ="headder_top">
+				<div id = "headder_logo"></div>
+				<div id ="headder_search">
+						
+				</div>
+				
+			
+			
+				<div id ="headder_nav">
+				</div>
+				<div id = "headder_user">
+								<div id = "headder_user_pic" style="back" >
+									<img src="@{book.getCurrentUser().getPictureUrl()}" width="45px" height="45px"/>
+								</div>
+								<div id = "headder_user_name">
+									<text value="@{book.getCurrentUser().getName()}"/>
+								</div>
+					<div class = "headder_user_text">
+										<a href="home.zhtml">View Profile</a> | <a href="edit.zhtml">Edit Profile</a>
+
+					</div>
+				</div>
+				<div id="logout">
+					<button label="logout" class="button">
+									<attribute name="onClick">
+											 book.logout();							
+											 WebUtilities.showWebPage("index.zhtml");
+									</attribute>
+							</button>
+
+				</div>
+			</div>
+		</div>
+		
+	<text value="@{book.getMsg()}"/> 
+	
+	<div id = "container">
+		<div id = "body_edit">
+				
+			<div class ="heading">Set Security Question</div>
+				<p>Name: <text value="@{book.getCurrentUser().getName()}" id="name1"/></p>
+<div>Incase you forget your password you will be able to retrive it by answering this question you set up</div>
+				<p>Question: <textbox value="" width="400px" id="ques1"/></p>
+				<p>Answer: <textbox value="" width="400px" id="ans1"/></p>				
+				<p></p>
+		<button label="Submit Question and Answer" class="button">
+	     <attribute name="onClick">
+			book.setSecurityQuestion(ques1.getValue(), ans1.getValue());		
+			book.saveProfile();				
+			WebUtilities.showWebPage("home.zhtml");			
+         </attribute>
+	   </button>
+				
+		</div>
+	</div>  	
+
+  	
+</body>
+</html>

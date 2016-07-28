@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Restaurants</key>
+	<array>
+		<string>http://maps.google.com/?q=24060+Restaurants</string>
+	</array>
+	<key>Hotels</key>
+	<array>
+		<string>http://maps.google.com/?q=24060+Hotels</string>
+	</array>
+	<key>Parking</key>
+	<array>
+		<string>http://maps.google.com/?q=24060+Parking</string>
+	</array>
+	<key>Bars</key>
+	<array>
+		<string>http://maps.google.com/?q=24060+Bars</string>
+	</array>
+</dict>
+</plist>

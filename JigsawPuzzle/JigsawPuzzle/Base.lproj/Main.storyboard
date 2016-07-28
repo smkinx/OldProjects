@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JigsawPuzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jigsawPuzzlePhoto" translatesAutoresizingMaskIntoConstraints="NO" id="1nY-IE-kEU">
+                                <rect key="frame" x="210" y="158" width="603" height="453"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="puzzleImage4" translatesAutoresizingMaskIntoConstraints="NO" id="kje-K5-PcN">
+                                <rect key="frame" x="0.0" y="0.0" width="174" height="176"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="puzzleImage7" translatesAutoresizingMaskIntoConstraints="NO" id="ev8-Fa-qKU">
+                                <rect key="frame" x="0.0" y="0.0" width="188" height="187"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="puzzleImage3" translatesAutoresizingMaskIntoConstraints="NO" id="92Y-Ii-ROq">
+                                <rect key="frame" x="8" y="0.0" width="170" height="171"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="puzzleImage1" translatesAutoresizingMaskIntoConstraints="NO" id="8g9-0x-xPb">
+                                <rect key="frame" x="0.0" y="0.0" width="165" height="175"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="puzzleImage8" translatesAutoresizingMaskIntoConstraints="NO" id="m2O-WQ-Inf">
+                                <rect key="frame" x="0.0" y="0.0" width="176" height="164"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="puzzleImage11" translatesAutoresizingMaskIntoConstraints="NO" id="VVD-6O-6pL">
+                                <rect key="frame" x="0.0" y="0.0" width="187" height="154"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="puzzleImage10" translatesAutoresizingMaskIntoConstraints="NO" id="ybx-gt-qqd">
+                                <rect key="frame" x="0.0" y="0.0" width="189" height="153"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="puzzleImage9" translatesAutoresizingMaskIntoConstraints="NO" id="rjH-oA-JGk">
+                                <rect key="frame" x="0.0" y="0.0" width="168" height="153"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="puzzleImage5" translatesAutoresizingMaskIntoConstraints="NO" id="6AR-O1-hhP">
+                                <rect key="frame" x="0.0" y="0.0" width="158" height="187"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="puzzleImage12" translatesAutoresizingMaskIntoConstraints="NO" id="oaw-9l-YF7">
+                                <rect key="frame" x="0.0" y="0.0" width="180" height="156"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="puzzleImage2" translatesAutoresizingMaskIntoConstraints="NO" id="Zuv-Si-QeU">
+                                <rect key="frame" x="0.0" y="0.0" width="228" height="179"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="puzzleImage6" translatesAutoresizingMaskIntoConstraints="NO" id="KQV-Fi-PhV">
+                                <rect key="frame" x="0.0" y="0.0" width="172" height="189"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcg-Xq-1AV">
+                                <rect key="frame" x="41" y="36" width="99" height="30"/>
+                                <state key="normal" title="New Game">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="newGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yNt-2x-M34"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00:00.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHW-tj-Lly">
+                                <rect key="frame" x="835" y="36" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bLv-pj-7MM">
+                                <rect key="frame" x="297" y="308" width="430" height="153"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygv-GC-jkj">
+                                <rect key="frame" x="355" y="626" width="315" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6mo-vM-sxN">
+                                <rect key="frame" x="58" y="0.0" width="60" height="147"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap New Game to Play!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKj-lt-b6T">
+                                <rect key="frame" x="323" y="28" width="379" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Lr-UA-RDn">
+                                <rect key="frame" x="889" y="0.0" width="60" height="147"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="backgroundRect" destination="1nY-IE-kEU" id="ZGR-rU-Xg8"/>
+                        <outlet property="congratulations" destination="bLv-pj-7MM" id="dt9-3e-515"/>
+                        <outlet property="endingLabel" destination="Ygv-GC-jkj" id="9c9-a9-IEV"/>
+                        <outlet property="instructionLabel" destination="SKj-lt-b6T" id="2po-Kx-eaI"/>
+                        <outlet property="puzzle1" destination="8g9-0x-xPb" id="kTy-mq-AMu"/>
+                        <outlet property="puzzle10" destination="ybx-gt-qqd" id="NAs-Ag-e9L"/>
+                        <outlet property="puzzle11" destination="VVD-6O-6pL" id="WFv-Y8-9vs"/>
+                        <outlet property="puzzle12" destination="oaw-9l-YF7" id="fPE-IO-hfM"/>
+                        <outlet property="puzzle2" destination="Zuv-Si-QeU" id="9Ec-YH-tak"/>
+                        <outlet property="puzzle3" destination="92Y-Ii-ROq" id="sdh-jQ-Jcg"/>
+                        <outlet property="puzzle4" destination="kje-K5-PcN" id="wYK-cg-dCd"/>
+                        <outlet property="puzzle5" destination="6AR-O1-hhP" id="oOT-gz-FE7"/>
+                        <outlet property="puzzle6" destination="KQV-Fi-PhV" id="PRb-Ya-0hD"/>
+                        <outlet property="puzzle7" destination="ev8-Fa-qKU" id="TWP-jN-D53"/>
+                        <outlet property="puzzle8" destination="m2O-WQ-Inf" id="YBH-RZ-7f0"/>
+                        <outlet property="puzzle9" destination="rjH-oA-JGk" id="fRP-5I-o5C"/>
+                        <outlet property="rocket1" destination="6mo-vM-sxN" id="Ehy-Ws-SDP"/>
+                        <outlet property="rocket2" destination="5Lr-UA-RDn" id="mPN-F5-FjO"/>
+                        <outlet property="timerLabel" destination="OHW-tj-Lly" id="1Tt-BB-0UZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="jigsawPuzzlePhoto" width="603" height="453"/>
+        <image name="puzzleImage1" width="165" height="170"/>
+        <image name="puzzleImage10" width="189" height="153"/>
+        <image name="puzzleImage11" width="187" height="154"/>
+        <image name="puzzleImage12" width="180" height="156"/>
+        <image name="puzzleImage2" width="228" height="179"/>
+        <image name="puzzleImage3" width="170" height="171"/>
+        <image name="puzzleImage4" width="174" height="176"/>
+        <image name="puzzleImage5" width="158" height="187"/>
+        <image name="puzzleImage6" width="172" height="189"/>
+        <image name="puzzleImage7" width="188" height="187"/>
+        <image name="puzzleImage8" width="176" height="164"/>
+        <image name="puzzleImage9" width="168" height="153"/>
+    </resources>
+</document>

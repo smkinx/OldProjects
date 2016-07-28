@@ -1,0 +1,31 @@
+<Group fieldset="true" id="c92623ce-84ee-43d8-a978-c2ad56b6d730">
+  <no-comparator/>
+  <entry>
+    <string>creater</string>
+    <string>may</string>
+  </entry>
+  <entry>
+    <string>description</string>
+    <string>say</string>
+  </entry>
+  <entry>
+    <string>members</string>
+    <list/>
+  </entry>
+  <entry>
+    <string>name</string>
+    <string>bay</string>
+  </entry>
+  <entry>
+    <string>pictureUrl</string>
+    <string>jay</string>
+  </entry>
+  <entry>
+    <string>wall</string>
+    <list/>
+  </entry>
+  <entry>
+    <string>wallPost</string>
+    <null/>
+  </entry>
+</Group>

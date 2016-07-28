@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98BB2E7119DCD4A800E86108 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BB2E7019DCD4A800E86108 /* AppDelegate.swift */; };
+		98BB2E7A19DCD4A800E86108 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98BB2E7919DCD4A800E86108 /* Images.xcassets */; };
+		98BB2E7D19DCD4A800E86108 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BB2E7B19DCD4A800E86108 /* LaunchScreen.xib */; };
+		98BB2E8919DCD4A800E86108 /* BlacksburgTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BB2E8819DCD4A800E86108 /* BlacksburgTests.swift */; };
+		98BB2E9319DCD4C000E86108 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98BB2E9219DCD4C000E86108 /* MapKit.framework */; };
+		98BB2E9519DCD5A100E86108 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BB2E9419DCD5A100E86108 /* PlacesTableViewController.swift */; };
+		98BB2E9719DCD5BC00E86108 /* PlacesWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BB2E9619DCD5BC00E86108 /* PlacesWebViewController.swift */; };
+		98BB2E9919DCD67200E86108 /* places.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98BB2E9819DCD67200E86108 /* places.plist */; };
+		98BB2E9B19DCD99E00E86108 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BB2E9A19DCD99E00E86108 /* TableViewCell.swift */; };
+		98BB2E9D19DCE1EF00E86108 /* bt.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98BB2E9C19DCE1EF00E86108 /* bt.plist */; };
+		98BB2EAF19DCF43E00E86108 /* recreation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98BB2EAE19DCF43E00E86108 /* recreation.plist */; };
+		98BB2F5D19DD0E4900E86108 /* RecreationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BB2F5C19DD0E4900E86108 /* RecreationTableViewController.swift */; };
+		98BB2F5F19DD10CE00E86108 /* btTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BB2F5E19DD10CE00E86108 /* btTableViewController.swift */; };
+		98BB2F6119DD143B00E86108 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BB2F6019DD143B00E86108 /* WeatherViewController.swift */; };
+		98BB2F6319DD184C00E86108 /* ArtandCultureWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BB2F6219DD184C00E86108 /* ArtandCultureWebViewController.swift */; };
+		98BB2F6519DD18D500E86108 /* LatestNewsWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BB2F6419DD18D500E86108 /* LatestNewsWebViewController.swift */; };
+		98BB2F6719DD18ED00E86108 /* HospitalWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BB2F6619DD18ED00E86108 /* HospitalWebViewController.swift */; };
+		98BB2F6919DD1AD800E86108 /* BTWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BB2F6819DD1AD800E86108 /* BTWebViewController.swift */; };
+		98BB2F6D19DD1B4900E86108 /* RecreationWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BB2F6C19DD1B4900E86108 /* RecreationWebViewController.swift */; };
+		98BB2F6F19DD1B9600E86108 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98BB2F6E19DD1B9600E86108 /* Main.storyboard */; };
+		98BB2F7119DD220000E86108 /* ScheduleandMapsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BB2F7019DD220000E86108 /* ScheduleandMapsTableViewController.swift */; };
+		98BB2F7319DD220900E86108 /* SandM.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98BB2F7219DD220900E86108 /* SandM.plist */; };
+		98BB2F7519DD23C400E86108 /* SandMWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BB2F7419DD23C400E86108 /* SandMWebViewController.swift */; };
+		98BB2F7719DD26F000E86108 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BB2F7619DD26F000E86108 /* MapViewController.swift */; };
+		98BB2F7919DD2A8300E86108 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98BB2F7819DD2A8300E86108 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98BB2E8319DCD4A800E86108 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98BB2E6319DCD4A800E86108 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98BB2E6A19DCD4A800E86108;
+			remoteInfo = Blacksburg;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		98BB2E6B19DCD4A800E86108 /* Blacksburg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blacksburg.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98BB2E6F19DCD4A800E86108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98BB2E7019DCD4A800E86108 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98BB2E7919DCD4A800E86108 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		98BB2E7C19DCD4A800E86108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		98BB2E8219DCD4A800E86108 /* BlacksburgTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlacksburgTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98BB2E8719DCD4A800E86108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98BB2E8819DCD4A800E86108 /* BlacksburgTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlacksburgTests.swift; sourceTree = "<group>"; };
+		98BB2E9219DCD4C000E86108 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		98BB2E9419DCD5A100E86108 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
+		98BB2E9619DCD5BC00E86108 /* PlacesWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesWebViewController.swift; sourceTree = "<group>"; };
+		98BB2E9819DCD67200E86108 /* places.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = places.plist; sourceTree = "<group>"; };
+		98BB2E9A19DCD99E00E86108 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		98BB2E9C19DCE1EF00E86108 /* bt.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bt.plist; sourceTree = "<group>"; };
+		98BB2EAE19DCF43E00E86108 /* recreation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recreation.plist; sourceTree = "<group>"; };
+		98BB2F5C19DD0E4900E86108 /* RecreationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecreationTableViewController.swift; sourceTree = "<group>"; };
+		98BB2F5E19DD10CE00E86108 /* btTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = btTableViewController.swift; sourceTree = "<group>"; };
+		98BB2F6019DD143B00E86108 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		98BB2F6219DD184C00E86108 /* ArtandCultureWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtandCultureWebViewController.swift; sourceTree = "<group>"; };
+		98BB2F6419DD18D500E86108 /* LatestNewsWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatestNewsWebViewController.swift; sourceTree = "<group>"; };
+		98BB2F6619DD18ED00E86108 /* HospitalWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HospitalWebViewController.swift; sourceTree = "<group>"; };
+		98BB2F6819DD1AD800E86108 /* BTWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTWebViewController.swift; sourceTree = "<group>"; };
+		98BB2F6C19DD1B4900E86108 /* RecreationWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecreationWebViewController.swift; sourceTree = "<group>"; };
+		98BB2F6E19DD1B9600E86108 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		98BB2F7019DD220000E86108 /* ScheduleandMapsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleandMapsTableViewController.swift; sourceTree = "<group>"; };
+		98BB2F7219DD220900E86108 /* SandM.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SandM.plist; sourceTree = "<group>"; };
+		98BB2F7419DD23C400E86108 /* SandMWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandMWebViewController.swift; sourceTree = "<group>"; };
+		98BB2F7619DD26F000E86108 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		98BB2F7819DD2A8300E86108 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98BB2E6819DCD4A800E86108 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98BB2F7919DD2A8300E86108 /* CoreLocation.framework in Frameworks */,
+				98BB2E9319DCD4C000E86108 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98BB2E7F19DCD4A800E86108 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98BB2E6219DCD4A800E86108 = {
+			isa = PBXGroup;
+			children = (
+				98D9AA0A19DD47EF00194E23 /* Framework */,
+				98BB2E6D19DCD4A800E86108 /* Blacksburg */,
+				98BB2E8519DCD4A800E86108 /* BlacksburgTests */,
+				98BB2E6C19DCD4A800E86108 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98BB2E6C19DCD4A800E86108 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98BB2E6B19DCD4A800E86108 /* Blacksburg.app */,
+				98BB2E8219DCD4A800E86108 /* BlacksburgTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98BB2E6D19DCD4A800E86108 /* Blacksburg */ = {
+			isa = PBXGroup;
+			children = (
+				98D9AA0B19DD4C3900194E23 /* plist Files */,
+				98BB2E7019DCD4A800E86108 /* AppDelegate.swift */,
+				98BB2F7619DD26F000E86108 /* MapViewController.swift */,
+				98D9AA0C19DD4C4E00194E23 /* TableViewControllers */,
+				98D9AA0D19DD4C6A00194E23 /* WebViewControllers */,
+				98BB2F6E19DD1B9600E86108 /* Main.storyboard */,
+				98BB2E7919DCD4A800E86108 /* Images.xcassets */,
+				98BB2E7B19DCD4A800E86108 /* LaunchScreen.xib */,
+				98BB2E6E19DCD4A800E86108 /* Supporting Files */,
+			);
+			path = Blacksburg;
+			sourceTree = "<group>";
+		};
+		98BB2E6E19DCD4A800E86108 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				98BB2E6F19DCD4A800E86108 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		98BB2E8519DCD4A800E86108 /* BlacksburgTests */ = {
+			isa = PBXGroup;
+			children = (
+				98BB2E8819DCD4A800E86108 /* BlacksburgTests.swift */,
+				98BB2E8619DCD4A800E86108 /* Supporting Files */,
+			);
+			path = BlacksburgTests;
+			sourceTree = "<group>";
+		};
+		98BB2E8619DCD4A800E86108 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				98BB2E8719DCD4A800E86108 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		98D9AA0A19DD47EF00194E23 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				98BB2E9219DCD4C000E86108 /* MapKit.framework */,
+				98BB2F7819DD2A8300E86108 /* CoreLocation.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		98D9AA0B19DD4C3900194E23 /* plist Files */ = {
+			isa = PBXGroup;
+			children = (
+				98BB2F7219DD220900E86108 /* SandM.plist */,
+				98BB2E9819DCD67200E86108 /* places.plist */,
+				98BB2EAE19DCF43E00E86108 /* recreation.plist */,
+				98BB2E9C19DCE1EF00E86108 /* bt.plist */,
+			);
+			name = "plist Files";
+			sourceTree = "<group>";
+		};
+		98D9AA0C19DD4C4E00194E23 /* TableViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				98BB2F5E19DD10CE00E86108 /* btTableViewController.swift */,
+				98BB2E9419DCD5A100E86108 /* PlacesTableViewController.swift */,
+				98BB2F5C19DD0E4900E86108 /* RecreationTableViewController.swift */,
+				98BB2F7019DD220000E86108 /* ScheduleandMapsTableViewController.swift */,
+				98BB2E9A19DCD99E00E86108 /* TableViewCell.swift */,
+			);
+			name = TableViewControllers;
+			sourceTree = "<group>";
+		};
+		98D9AA0D19DD4C6A00194E23 /* WebViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				98BB2F6819DD1AD800E86108 /* BTWebViewController.swift */,
+				98BB2E9619DCD5BC00E86108 /* PlacesWebViewController.swift */,
+				98BB2F6C19DD1B4900E86108 /* RecreationWebViewController.swift */,
+				98BB2F7419DD23C400E86108 /* SandMWebViewController.swift */,
+				98BB2F6019DD143B00E86108 /* WeatherViewController.swift */,
+				98BB2F6219DD184C00E86108 /* ArtandCultureWebViewController.swift */,
+				98BB2F6619DD18ED00E86108 /* HospitalWebViewController.swift */,
+				98BB2F6419DD18D500E86108 /* LatestNewsWebViewController.swift */,
+			);
+			name = WebViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98BB2E6A19DCD4A800E86108 /* Blacksburg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98BB2E8C19DCD4A800E86108 /* Build configuration list for PBXNativeTarget "Blacksburg" */;
+			buildPhases = (
+				98BB2E6719DCD4A800E86108 /* Sources */,
+				98BB2E6819DCD4A800E86108 /* Frameworks */,
+				98BB2E6919DCD4A800E86108 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Blacksburg;
+			productName = Blacksburg;
+			productReference = 98BB2E6B19DCD4A800E86108 /* Blacksburg.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98BB2E8119DCD4A800E86108 /* BlacksburgTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98BB2E8F19DCD4A800E86108 /* Build configuration list for PBXNativeTarget "BlacksburgTests" */;
+			buildPhases = (
+				98BB2E7E19DCD4A800E86108 /* Sources */,
+				98BB2E7F19DCD4A800E86108 /* Frameworks */,
+				98BB2E8019DCD4A800E86108 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98BB2E8419DCD4A800E86108 /* PBXTargetDependency */,
+			);
+			name = BlacksburgTests;
+			productName = BlacksburgTests;
+			productReference = 98BB2E8219DCD4A800E86108 /* BlacksburgTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98BB2E6319DCD4A800E86108 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Supratim Baruah";
+				TargetAttributes = {
+					98BB2E6A19DCD4A800E86108 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					98BB2E8119DCD4A800E86108 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 98BB2E6A19DCD4A800E86108;
+					};
+				};
+			};
+			buildConfigurationList = 98BB2E6619DCD4A800E86108 /* Build configuration list for PBXProject "Blacksburg" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98BB2E6219DCD4A800E86108;
+			productRefGroup = 98BB2E6C19DCD4A800E86108 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98BB2E6A19DCD4A800E86108 /* Blacksburg */,
+				98BB2E8119DCD4A800E86108 /* BlacksburgTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98BB2E6919DCD4A800E86108 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98BB2EAF19DCF43E00E86108 /* recreation.plist in Resources */,
+				98BB2F7319DD220900E86108 /* SandM.plist in Resources */,
+				98BB2E7D19DCD4A800E86108 /* LaunchScreen.xib in Resources */,
+				98BB2E9919DCD67200E86108 /* places.plist in Resources */,
+				98BB2F6F19DD1B9600E86108 /* Main.storyboard in Resources */,
+				98BB2E9D19DCE1EF00E86108 /* bt.plist in Resources */,
+				98BB2E7A19DCD4A800E86108 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98BB2E8019DCD4A800E86108 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98BB2E6719DCD4A800E86108 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98BB2E9719DCD5BC00E86108 /* PlacesWebViewController.swift in Sources */,
+				98BB2F6119DD143B00E86108 /* WeatherViewController.swift in Sources */,
+				98BB2F6319DD184C00E86108 /* ArtandCultureWebViewController.swift in Sources */,
+				98BB2E9B19DCD99E00E86108 /* TableViewCell.swift in Sources */,
+				98BB2F5D19DD0E4900E86108 /* RecreationTableViewController.swift in Sources */,
+				98BB2F6519DD18D500E86108 /* LatestNewsWebViewController.swift in Sources */,
+				98BB2F5F19DD10CE00E86108 /* btTableViewController.swift in Sources */,
+				98BB2F7519DD23C400E86108 /* SandMWebViewController.swift in Sources */,
+				98BB2E7119DCD4A800E86108 /* AppDelegate.swift in Sources */,
+				98BB2E9519DCD5A100E86108 /* PlacesTableViewController.swift in Sources */,
+				98BB2F6719DD18ED00E86108 /* HospitalWebViewController.swift in Sources */,
+				98BB2F7119DD220000E86108 /* ScheduleandMapsTableViewController.swift in Sources */,
+				98BB2F6D19DD1B4900E86108 /* RecreationWebViewController.swift in Sources */,
+				98BB2F6919DD1AD800E86108 /* BTWebViewController.swift in Sources */,
+				98BB2F7719DD26F000E86108 /* MapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98BB2E7E19DCD4A800E86108 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98BB2E8919DCD4A800E86108 /* BlacksburgTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98BB2E8419DCD4A800E86108 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98BB2E6A19DCD4A800E86108 /* Blacksburg */;
+			targetProxy = 98BB2E8319DCD4A800E86108 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		98BB2E7B19DCD4A800E86108 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98BB2E7C19DCD4A800E86108 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98BB2E8A19DCD4A800E86108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		98BB2E8B19DCD4A800E86108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98BB2E8D19DCD4A800E86108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Blacksburg/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		98BB2E8E19DCD4A800E86108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Blacksburg/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		98BB2E9019DCD4A800E86108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlacksburgTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blacksburg.app/Blacksburg";
+			};
+			name = Debug;
+		};
+		98BB2E9119DCD4A800E86108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlacksburgTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blacksburg.app/Blacksburg";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98BB2E6619DCD4A800E86108 /* Build configuration list for PBXProject "Blacksburg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98BB2E8A19DCD4A800E86108 /* Debug */,
+				98BB2E8B19DCD4A800E86108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98BB2E8C19DCD4A800E86108 /* Build configuration list for PBXNativeTarget "Blacksburg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98BB2E8D19DCD4A800E86108 /* Debug */,
+				98BB2E8E19DCD4A800E86108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98BB2E8F19DCD4A800E86108 /* Build configuration list for PBXNativeTarget "BlacksburgTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98BB2E9019DCD4A800E86108 /* Debug */,
+				98BB2E9119DCD4A800E86108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98BB2E6319DCD4A800E86108 /* Project object */;
+}

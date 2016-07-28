@@ -1,0 +1,197 @@
+<html>
+<head>
+ 
+<link rel="stylesheet" type="text/css" href="group.css"></link>
+
+</head>
+
+<variable type="FaceBooklet" name="book" value="new FaceBooklet()" />
+<variable type="Group" name="group" value="new GroupViewer()" />
+   <variable type="String" name="groupName" value="null" />
+   <variable type="String" name="Friends" value="null" />
+   <variable type="WallPosting" name="posts" value="null" />
+   <variable type="String" name="pictureUrl" value="null" />
+   <variable type="String" name="Groups" value="null" />
+   <variable type="String" name="Members" value="null" />
+
+
+<zscript>
+    if (book.getCurrentUser() == null)
+    {
+        WebUtilities.showWebPage("index.zhtml");
+    }
+</zscript>
+
+
+
+<body>
+
+
+
+		<div id ="headder">
+			<div id ="headder_top">
+				<div id = "headder_logo"></div>
+				<div id ="headder_search">
+						<textbox value="" id="name" class="textbox" height="19px"  width="200px"/>
+							<button label="Lookup Group" class="button">
+									<attribute name="onClick">
+											 groupName = name.getValue() ;		 
+										   
+												group.loadGroup(groupName);
+								
+											 
+									</attribute>
+							</button>
+				</div>
+				
+			
+			
+				<div id ="headder_nav">
+				<a href="home.zhtml">View Profiles</a>
+				</div>
+				<div id = "headder_user">
+								<div id = "headder_user_pic" style="back" >
+									<img src="@{book.getCurrentUser().getPictureUrl()}" width="45px" height="45px"/>
+								</div>
+								<div id = "headder_user_name">
+									<text value="@{book.getCurrentUser().getName()}"/>
+									
+								</div>
+					<div class = "headder_user_text">
+					<a href="home.zhtml">View Profile</a> | <a href="edit.zhtml">Edit Profile</a>
+					</div>
+				</div>
+				<div id="logout">
+					<button label="logout" class="button">
+									<attribute name="onClick">
+											 book.logout();							
+											 WebUtilities.showWebPage("index.zhtml");
+									</attribute>
+							</button>
+
+				</div>
+			</div>
+		</div>
+	
+	
+	
+<div id = "container">
+		<div id ="body">
+		
+			<div id ="body_left">
+				<div id ="body_left_left">
+					<div id ="body_left_pic">
+						<img src="@{group.getGroup().getPictureUrl()}" width="178px" alt="Profile picture will be here"/> 
+					</div>
+					<div class ="body_left_left">
+					<p></p>
+<button label="Join Group" visible="True" class="button" width="180px">
+        <attribute name= "onClick">		
+		group.loadGroup(groupName);
+		group.getGroup().joinGroup(book.getCurrentUser().getName());
+		
+		group.saveGroup();
+		book.getCurrentUser().addGroup(groupName);
+		book.saveProfile();
+
+        </attribute>
+      </button>
+	  <p></p>
+	  <listbox model="@{group.getGroup().getMembers()}" selectedItem="@{Members}">
+
+						<listhead>
+							<listheader label="Members"/>
+						</listhead>
+						 <listitem each="@{aMembers}">
+								
+							<listcell>
+					<img src="@{book.getUser(aMembers).getPictureThumbUrl()}" width="45px" height="45px"/>
+										<text value="@{aMembers}"/>
+								</listcell>
+							</listitem>
+					</listbox>
+
+					</div>
+				</div>
+				<div id ="body_left_right">
+					<div id ="body_right_name"><text value="@{group.getGroup().getName()}" /></div>
+					
+					
+					<div class="body_info">	
+					<div>
+						<div class="body_info_set">
+							<div class="body_info_head">Creater</div>
+							<div class="body_info_tail"><text value="@{group.getGroup().getCreater()}"/></div>
+						</div>
+						</div>
+						<div>
+						<div class="body_info_set">
+							<div><b>Description</b></div>
+							<div><text value="@{group.getGroup().getDescription()}"/></div>
+						</div>
+						</div>
+						<div id ="body_right_wall">
+					<div id ="body_right_head">Wall Posts
+					<div>
+						  		<textbox value="" id="wall" width="290px" class="textbox" height="19px"/>
+									<button label="Post" width="58px" height="25px" class="button">
+								<attribute name= "onClick">
+									group.getGroup().postToWall(book.getCurrentUser(), wall.getValue());
+										group.saveGroup();
+							
+							
+										</attribute>
+										</button>
+					</div>
+					</div>
+						<text value="@{group.getGroup().getWallPostings()}"/>
+				</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id ="body_right">			
+			Creater: <text value="@{book.getCurrentUser().getName()}" id="creater" /><br/>
+			Group Name: <textbox value="" id="gn" width="150px"/><br/>
+			Description: <textbox value="" id="Description" width="170px" />
+			Picture URL: <textbox value="" id="PictureURL" width="170px" />
+			<button label="Create a Group" width="170px" height="25px" class="button">
+								<attribute name= "onClick">
+									group.createGroup(creater.getValue(), gn.getValue(), Description.getValue(),PictureURL.getValue());
+									book.getCurrentUser().addGroup(gn.getValue());									
+									book.saveProfile();									
+										</attribute>
+										</button>
+										<p></p>
+										<listbox model="@{book.getCurrentUser().getGroups()}" selectedItem="@{Groups}">
+	  <attribute name="onSelect">
+							
+							group.loadGroup(Groups);
+							</attribute>	
+						<listhead>
+							<listheader label="Groups you joined or created"/>
+						</listhead>
+						 <listitem each="@{aGroups}">
+								
+							<listcell>
+					<text value="@{aGroups}"/>
+								</listcell>
+							</listitem>
+					</listbox>
+
+			</div>
+		 
+		</div>
+			
+						  
+
+
+
+						  
+									
+</div>  	
+
+
+  	
+</body>
+</html>

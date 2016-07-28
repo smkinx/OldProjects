@@ -1,0 +1,26 @@
+<window id="win" title="1st window" border="normal" width="200px"
+closable="true">
+
+				
+			<div class ="heading">Edit Profile</div>
+				Creater: <text value="@{group.getCurrentUser().getName()}" id="name1"/>
+				Description: <textbox value="@{book.getCurrentUser().getEmail()}" width="400px" id="email1"/>
+				Status: <textbox value="@{book.getCurrentUser().getStatus()}" width="400px" id="status1"/>
+				PictureUrl: <textbox value="@{book.getCurrentUser().getPictureUrl()}" width="400px" id="pic1"/>
+
+			
+				
+		<button label="Save">
+	     <attribute name="onClick">
+			group.loadProfile(name1.getValue());
+			group.setInfo(email1.getValue(),status1.getValue(),pic1.getValue(),pass1.getValue(),thumb1.getValue());
+			group.saveProfile();	
+			WebUtilities.showWebPage("group.zhtml");
+			win.detach();
+					
+         </attribute>
+	   </button>
+				
+
+    <button label="OK" onClick="win.detach()"/>
+</window>

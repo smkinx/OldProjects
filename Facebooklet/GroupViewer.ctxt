@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=GroupViewer()
+comment0.text=\r\n\ Creates\ a\ new\ GroupViewer\ object.\r\n
+comment1.params=
+comment1.target=Group\ getGroup()
+comment1.text=\r\n\ An\ accessor\ to\ obtain\ profile.\r\n\ @return\ entry\ that\ holds\ profile\r\n
+comment2.params=newGroup
+comment2.target=void\ setGroup(Group)
+comment2.text=\r\n\ A\ setter\ that\ sets\ profile.\r\n\ @param\ newGroup\ \ new\ UserProfile\ object.\r\n
+comment3.params=
+comment3.target=void\ saveGroup()
+comment3.text=\r\n\ This\ method\ saves\ the\ group.\r\n
+comment4.params=groupName
+comment4.target=boolean\ loadGroup(java.lang.String)
+comment4.text=\r\n\ This\ method\ loads\ profile\ with\ name\ that\ is\ inputed.\r\n\ @param\ groupName\ The\ user\ name\ to\ load.\r\n\ @return\ true\ or\ false\ depending\ the\ used\ was\ able\ to\ \r\n\ load\ the\ group.\r\n
+comment5.params=creater\ groupName\ description\ pictureUrl
+comment5.target=boolean\ createGroup(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment5.text=\r\n\ This\ method\ creats\ a\ group.\r\n\ @param\ creater\ the\ creater\ of\ the\ group\r\n\ @param\ groupName\ the\ name\ of\ the\ group\r\n\ @param\ description\ the\ description\ of\ the\ group\r\n\ @param\ pictureUrl\ the\ pic\ url\ of\ the\ group.\r\n\ @return\ true\ or\ false\ depending\ if\ the\ user\ was\ \r\n\ able\ to\ make\ the\ group\r\n
+numComments=6

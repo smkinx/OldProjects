@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ProfileViewer()
+comment0.text=\r\n\ Creates\ a\ new\ FaceBooklet\ object.\r\n
+comment1.params=
+comment1.target=UserProfile\ getProfile()
+comment1.text=\r\n\ An\ accessor\ to\ obtain\ profile.\r\n\ @return\ entry\ that\ holds\ profile\r\n
+comment2.params=newEntry
+comment2.target=void\ setProfile(UserProfile)
+comment2.text=\r\n\ A\ setter\ that\ sets\ profile.\r\n\ @param\ newEntry\ \ new\ UserProfile\ object.\r\n
+comment3.params=newEmail\ newStatus\ newPictureUrl\ newPass\ newThumb
+comment3.target=void\ setInfo(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment3.text=\r\n\ This\ method\ set\ the\ information\ from\ the\ profile.\r\n\ @param\ newPass\ The\ password\ of\ the\ user\r\n\ @param\ newEmail\ The\ email\ of\ the\ user\r\n\ @param\ newStatus\ The\ status\ of\ the\ user\r\n\ @param\ newPictureUrl\ The\ picture\ URL\ of\ the\ user\ \ \ \ \r\n\ @param\ newThumb\ The\ thumb\ picture\ URL\ of\ the\ user\ \ \ \r\n
+comment4.params=
+comment4.target=void\ saveProfile()
+comment4.text=\r\n\ This\ method\ saves\ the\ profile.\r\n
+comment5.params=name
+comment5.target=void\ loadProfile(java.lang.String)
+comment5.text=\r\n\ This\ method\ loads\ profile\ with\ name\ that\ is\ inputed.\r\n\ @param\ name\ The\ user\ name\ to\ load.\r\n
+comment6.params=name
+comment6.target=UserProfile\ getUser(java.lang.String)
+comment6.text=\r\n\ This\ method\ loads\ profile\ and\ return\ the\ user\ Profile.\r\n\ @param\ name\ The\ user\ name\ to\ load.\r\n\ @return\ returns\ user\ profile\r\n
+comment7.params=newQuestion\ newAns
+comment7.target=void\ setSecurityQuestion(java.lang.String,\ java.lang.String)
+comment7.text=\r\n\ This\ method\ to\ set\ the\ question\ and\ answer\ to\ \r\n\ get\ back\ the\ password.\r\n\ @param\ newQuestion\ The\ question.\r\n\ @param\ newAns\ the\ answer.\r\n
+numComments=8
